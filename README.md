@@ -1,11 +1,11 @@
 # Sign Language Classifier
 
-A real-time sign language recognition system using MediaPipe and scikit-learn.
+A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn.
 
 ## Features
 
 - Real-time hand gesture recognition
-- 5 sign language classes: "I love you", "Hello", "Thank you", "Me/I", "Want"
+- 10 sign language classes: "I Love You", "Hello", "Thank you", "Me/I", "Want", "Question", "Help", "Water", "A", "Yes"
 - 100% accuracy on training data
 - Webcam-based inference
 

@@ -1,4 +1,4 @@
-# Sign Language Classifier
+# Signify
 
 A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn.
 

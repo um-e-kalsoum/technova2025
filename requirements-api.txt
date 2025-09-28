@@ -1,7 +1,0 @@
-flask==2.3.2
-flask-cors==4.0.0
-opencv-python==4.8.1.78
-mediapipe==0.10.7
-scikit-learn==1.7.2
-numpy==2.2.6
-pillow==10.0.0

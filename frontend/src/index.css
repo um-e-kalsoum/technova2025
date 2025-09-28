@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* Enable Tailwind v4 dark: utilities via .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply text-black;
+    background-color: #f3f3f5;
+    background-image: url("./assets/greenaura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  @variant dark {
+    body {
+      @apply text-white;
+      background-image: url("./assets/blueaura.jpg");
+      background-color: #0b0c0f;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+@layer components {
+  /* Frosted glass container */
+  .glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 65%;
+  }
+
+  /* Hover feature*/
+  .hover-feature {
+  @apply transition-transform duration-300 hover:scale-105 hover:-translate-y-2
+         hover:shadow-[0_0_40px_rgba(255,255,255,0.5)];
+}
+
+.dark .hover-feature {
+  @apply hover:shadow-[0_0_25px_rgba(74,144,226,0.6)];
+}
+
+
+  /* textbox light/dark presets with hover lift + shadow */
+  .textbox {
+    @apply p-4 rounded-lg shadow bg-[#B2C9AB] text-black
+           transition-transform duration-300 hover:scale-105 hover:-translate-y-2
+           hover:shadow-[0_0_30px_rgba(255,255,255,0.4),0_0_60px_rgba(255,255,255,0.2)]
+  }
+
+  .dark .textbox {
+    @apply bg-[#1a1f2b] text-white
+           hover:shadow-[0_0_25px_rgba(74,144,226,0.6)];
+  }
+
+  .textbox-accent {
+    @apply p-4 rounded-lg shadow bg-[#788AA3] text-black;
+  }
+  .dark .textbox-accent {
+    @apply bg-[#252f48] text-white;
+  }
+
+  /* nav links */
+  .nav-link {
+    @apply text-black transition-colors hover:text-white;
+  }
+  .dark .nav-link {
+    @apply text-white hover:opacity-80;
+  }
+
+  /* Optional reusable hover classes */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:scale-105 hover:-translate-y-2;
+  }
+
+  .hover-glow {
+    @apply transition duration-300 hover:shadow-[0_0_25px_rgba(74,144,226,0.6)];
+  }
+
+  .hover-tint {
+    @apply transition duration-300 hover:bg-[#92B6B1]/40 dark:hover:bg-[#33415c]/60;
+  }
+}

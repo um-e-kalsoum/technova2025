@@ -1,6 +1,6 @@
 # Signify
 
-A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn.
+A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn. The system provides a web-based user interface devloped using React.js, Vite, and Tailwind CSS.
 
 ## Features
 
@@ -8,6 +8,9 @@ A real-time sign language recognition system using MediaPipe, OpenCV, and scikit
 - 10 sign language classes: "I Love You", "Hello", "Thank you", "Me/I", "Want", "Question", "Help", "Water", "A", "Yes"
 - 100% accuracy on training data
 - Webcam-based inference
+- Light/dark mode toggle
+- Resizable interpreted text
+  
 
 ## Setup
 
@@ -35,6 +38,8 @@ python train_classifier.py
 ```bash
 python inference_classifier.py
 ```
+
+6.
 
 ## Files
 

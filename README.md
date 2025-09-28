@@ -1,6 +1,6 @@
 # Signify
 
-A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn. The system provides a web-based user interface devloped using React.js, Vite, and Tailwind CSS.
+A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn. The system provides a web-based user interface developed using React.js, Vite, and Tailwind CSS.
 
 ## Features
 

@@ -1,6 +1,6 @@
 # Signify
 
-A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn. The system provides a web-based user interface devloped using React.js, Vite, and Tailwind CSS.
+A real-time sign language recognition system using MediaPipe, OpenCV, and scikit-learn. The system provides a web-based user interface developed using React.js, Vite, and Tailwind CSS.
 
 ## Features
 
@@ -46,7 +46,7 @@ python inference_classifier.py
 - `collect_images.py` - Collects training images from webcam
 - `create_dataset.py` - Processes images and extracts hand landmarks
 - `train_classifier.py` - Trains the RandomForest classifier
-- `inference_classifier.py` - Real-time sign language recognition
+- `inference_classifier.py` - Real-time sign language recognition from trained data
 - `data/` - Training images organized by class
 - `data.pickle` - Processed hand landmark data
 - `model.p` - Trained classifier model
